@@ -1,0 +1,46 @@
+@font-face {
+    font-family:'Red' ;
+    src: url('Red Seven.otf') format('opentype');
+    
+
+    /*Tipos de Format
+      - Opentype (.otf)
+      - Truetype (.ttf)
+    */
+}
+
+
+
+*{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    
+    background-image: linear-gradient(to bottom, #8b2c6a 20%, #523197  );
+
+}
+
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.425);
+}
+
+h1{
+    font-family: 'Red';
+    color: rgb(0, 42, 104);
+    text-align: center;
+}
+
+h2{
+    color: rgb(0, 42, 104);
+}
+
+p{
+    text-align: justify;
+}

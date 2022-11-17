@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&family=Rubik+Glitch&display=swap');
+
+@font-face{
+    font-family: "idroid";
+    src: url('fontes/idroid.otf');
+}
+body{
+    background-color: #03a74ac0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #034159, #07887b);
+    padding: 30px;
+    margin: -10px -10px 10px -10px;
+}
+
+h1#titulocabeca{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 15px;
+    color: white;
+    
+}
+
+p#pcabeca{
+    
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    margin-top: 17px;
+    
+    
+}
+
+nav{
+    text-align:left;
+    margin: 10px 10px -18px -20px;
+}
+
+nav>a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+nav>a:hover{
+    color: #054863d3;
+    
+}
+
+main{
+    background-color: white;
+    margin: -10px 100px 20px 100px ;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+h1#titulomain{
+    font-family: 'idroid', cursive;
+    font-weight: 100;
+    color: #022e3f;
+    margin-top: -1px;
+    
+}
+
+.versao{ /*h2*/
+    font-family: 'idroid', cursive;
+    font-weight: 100;
+    color: #022e3f;
+    margin-top: -3px;
+    background-color: #03a74a57;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+    
+}
+main>p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+main>p{
+    text-align: justify;
+}
+
+strong{
+    color: #0e7231;
+}
+
+main>img{
+    display: block; /*Tornei a imagem um box level e posso configurar largura e centralização*/
+    width: 50%;
+    margin: auto;
+}
+
+main>picture>img{
+    display: block;
+    width: 100%;
+    
+    
+}
+
+main>article{
+    background-color: #025951;
+    padding: 20px;
+    margin: -10px -20.3px -10px -20.3px;
+}
+
+main>article>iframe{
+    display: block;
+    margin: auto;
+}
+
+footer{
+    background-color: #025951;
+    padding: 1px;
+    margin: 30px -10px -10px -10px;
+}
+
+footer>p{
+    color: white;
+    text-align: center;
+}
+footer>p>a{
+    color: white;
+    text-decoration: none;
+}
+
+footer>p>a:hover{
+    color: #01ff5a;
+    text-decoration: underline;
+}

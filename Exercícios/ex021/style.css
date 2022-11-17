@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to bottom, #2a0677 , #BEBDBF);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #000000;
+    font-weight: 800;
+}
+/*Em HTML É ID e em CSS é #*/
+/*EM HTML é CLASS e em CSS é .*/
+
+h1#principal{
+    color: #b4b4b4;
+    text-align: center;
+    font-size: 3em;
+}
+
+h2{
+    color: #000000;
+    text-decoration: underline;
+}
+
+.basico{ /*Classe é representada por ponto*/
+    color: rgb(0, 204, 255);
+}
+
+.intermediario{
+    color: yellow;
+}
+
+.avancado{
+    color: rgb(185, 0, 0);
+}

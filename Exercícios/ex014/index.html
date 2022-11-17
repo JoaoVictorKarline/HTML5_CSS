@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servior</p>
+    <!--<video src="midia/ogv.ogv" width="500" controls></video>-->
+
+    <video width="400" controls poster="midia/cafe.jpg" loop> <!--Poster é a imagem de Banner caso o vídeo pare-->
+        <source src="midia/Meu-Video.m4v" type="">
+        <source src="midia/ogv.ogv" type="">
+        <source src="midia/meu-video.mp4" type="">
+        <p>Seu navegador não conseguiu reproduzir o Aúdio</p>
+        <!--Lembrando que o Source é por ordem-->
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tjZQnk5j6Zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Vai em um vídeo do YT e clica em compartilhar depois em incorporar e copia o código e cola no HTML-->
+</body>
+</html>

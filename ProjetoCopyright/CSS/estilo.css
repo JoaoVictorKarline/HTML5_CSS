@@ -1,0 +1,146 @@
+body{
+	margin: 0 auto;
+	width: 90%;
+	background-color: black;
+}
+header{
+	position: relative;
+	background: linear-gradient(white, black);
+	height: 200px;
+}
+.menu_opcoes{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border: 2px solid grey;
+}
+.menu_opcoes ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-style: Arial;
+	font-size: 15px;
+	overflow: hidden;
+	background-color: #1c1c1c;
+}
+.menu_opcoes ul li{
+	display: inline;
+	margin-left: 0px;
+	border-right: 1px solid white;
+}
+.menu_opcoes l1:last-child{
+	border-right: none;
+}
+.menu_opcoes a{
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 14px 16px;
+}
+.menu_opcoes li a:hover{
+	border-radius: 100px;
+	box-shadow: 2px 2px 2px 2px white;
+	color:black;
+	background-color: gray;
+}
+footer{
+	position: relative;
+	background: linear-gradient(black, white);
+	clear: both;
+	padding: 20px 0;
+	height: 150px;
+}
+footer ul{
+	position: absolute;
+	list-style-type: none;
+	top:0;
+	right:0;
+	overflow: hidden;
+	padding: 30px;
+}
+footer ul li{
+	display: inline;
+	margin-left: 25px;
+}
+.social a{
+	height: 32px;
+	width: 33px;
+	display: inline-block;
+	text-indent:  -9999px;	
+}
+.social a[href*="facebook.com"]{
+	background-image:  url(../img/facebook.png);
+}
+.social a[href*="twitter.com"]{
+	background-image:  url(../img/twitter.png);
+}
+.social{
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+.container{
+	margin: 0 auto;
+	width: 100%;	
+}
+.busca,
+.menu_vertical{
+	background-color: gray;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-right: 10px;
+	width: 230px;
+	float: left;
+}
+.busca input[type=search]{
+	width: 170px;
+}
+.busca h2,
+.busca form,
+.menu_vertical h2{
+	margin: 10px;
+}
+.menu_vertical{
+	clear: left;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.menu_vertical li{
+	background-color: white;
+	margin-bottom: 1px;
+	padding: 5px 10px;
+	list-style-type: none; 
+}
+.menu_vertical a{
+	color: black;
+	text-decoration: none;
+}
+.menu_vertical li ul{
+	display: none;
+}
+.menu_vertical li:hover ul{
+	display: block;
+}
+.menu_vertical ul ul li{
+	background-color: black;
+}
+.menu_vertical li li a{
+	color: white;
+	font-size: 8px;
+}
+.menu_vertical li li a:before{
+	content: '\272A';
+	padding-right: 3px;
+	color: gold;
+	font-size: 12px;
+}
+.destaque{
+	margin-top: 10px;
+}
+.destaque figure{
+	width: 100%;
+}
+.destaque figure img{
+	width: 49%;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Dinâmica</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse Site em outros dispositivos ou aumente e diminua o tamanho do Navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png"><!--Vai mostrar a imagem pequena até 750px-->
+        <source media="(max-width: 1050px )" srcset="imagens/media.png" type="image/png"><!--Vai mostrar a imagem Média até 1000px-->
+        <img src="imagens/grande.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Aprendendo a Reproduzir áudio</p>
+    <audio src="midia/As You Were - TrackTribe.mp3" controls></audio> <!--Se eu quiser que reproduza Automático eu uso o comando autoplay depois de controls-->
+    <!--MP3, WAV, OGG-->
+
+    <audio preload="metadata" controls loop><!--Metadata vai carregar alguns dados, None não carrega nada-->
+        <source src="midia/Daytime Forrest Bonfire.mp3" type="audio/mpeg">
+        <p>Caso não toque o seu navegador está com Problemas</p><!--Vai mostrar esse parágrafo se a mídia não rodar-->
+    </audio>
+
+</body>
+</html>
