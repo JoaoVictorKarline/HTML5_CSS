@@ -36,6 +36,7 @@ body{
 
 header{
     background-image: linear-gradient(to bottom, #034159, #07887b);
+    min-width: 362px;
     padding: 38px;
     margin-bottom: 20px;
     text-align: center;
@@ -45,17 +46,18 @@ header{
 header h1{
     font-family: var(--fonte02);
     color: white;
-    margin-top: 10px;
-    font-size: 1.5em;
-   
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    
 }
 
 header p{
     font-family: var(--fonte01);
     color: white;
-    margin-top: 3px;
-    padding: 10px;
     font-size: 20px;
+    text-align: center;
+    
 }
 
 header>nav{
@@ -82,7 +84,7 @@ header a:hover{
 main{
     background-color: white;
     margin: auto;
-    min-width: 200px;
+    min-width: 400px;
     max-width: 1070px;
     padding: 20px;
     margin-top: -20px;
@@ -149,6 +151,7 @@ iframe {
 
 footer{
     background-color: var(--cor03);
+    min-width: 380px;
     margin-top: 40px;
     padding: 30px;
 }
