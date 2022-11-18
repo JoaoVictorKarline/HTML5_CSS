@@ -36,7 +36,7 @@ body{
 
 header{
     background-image: linear-gradient(to bottom, #034159, #07887b);
-    min-width: 362px;
+    min-width: 363px;
     padding: 38px;
     margin-bottom: 20px;
     text-align: center;
@@ -64,7 +64,7 @@ header p{
 header>nav{
     text-decoration: none;
     text-align: left;
-    padding: 10px;
+    padding: 40px 10px 10px 10px;
     margin: -3px -27px -29px -40px;
 }
 
@@ -89,6 +89,7 @@ main{
     max-width: 1070px;
     padding: 20px;
     margin-top: -20px;
+    margin-right: auto;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.411);
     border-radius: 0px 0px 10px 10px;
 }
