@@ -24,7 +24,6 @@ header h1{
     color: white;
     font-family: 'Permanent Marker', cursive;
     font-size: 5em;
-    padding: 10px;
     text-align: center;
     font-variant: small-caps;
     
@@ -83,7 +82,7 @@ section{
 #livro{
    
     height: 700px;
-    margin-top: -40px;
+    margin-top: 1px;
     background-image: url('imagens/background002.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,17 +107,17 @@ section{
 }
 
 .branco{
+    display: inline-block; /*Agora eu consigo movimentar o parágrafo na section*/
     color: white;
     font-family: 'Permanent Marker', cursive;
-    height: 600px;
-    font-size: 45px;
-    padding: 40px;
-    background-color:rgba(0, 0, 0, 0.397);
+    height: 541px;
+    font-size: 43px;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.397);
     text-align: center;
     width: 500px;
     margin-left: 60px;
-    margin-top: 40px;
-    
+    margin-top: 34px;
 }
 
 footer{
