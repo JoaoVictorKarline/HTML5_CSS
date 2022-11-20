@@ -4,7 +4,7 @@
 
 
 body{
-    min-width: 600px;
+    min-width: 100vh;
     max-width: 1500px;
     margin: auto;
     background-color: lightgray;
@@ -77,7 +77,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed; /*Efeito paralax*/
+    background-attachment: fixed; /*Efeito paralax*/ /*Não vai rolar com o conteúdo*/
 }
 
 #livro{
