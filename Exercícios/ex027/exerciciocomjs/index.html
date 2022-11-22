@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício com JS</title>
+</head>
+<body>
+    <div class="container" onmouseout="tiroumouse()">
+        <div class="img">
+            <img src="icone-instagram (1).png" alt="" height="100px" onmouseover="passoumouse()">
+            <br>
+            <img src="icone-linkedin.png" alt="" height="100px" onmouseover="passoumousel()">
+        </div>
+
+        <div>
+            <span id="titulo">/*Passe o Mouse sobre uma das imagens*/</span>
+        </div>
+    </div>
+
+    <script>
+    
+        function passoumouse(){
+           let s = document.getElementById("titulo")
+            s.innerHTML = 'Primeira Imagem'
+            
+        }
+
+        function passoumousel(){
+            let s = document.getElementById("titulo")
+            s.innerHTML = 'Segunda Imagem'
+            
+        }
+
+        function tiroumouse(){
+            let s = document.getElementById('titulo')
+            s.innerText = '/*Passe o Mouse sobre uma das imagens*/'
+        }
+
+    </script>
+</body>
+</html>
