@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 008</title>
+</head>
+<body>
+    <h1>Testando Formulários</h1>
+
+    <form action="" method="get">
+
+        <fieldset>
+            <p>
+                <label for="in1">Número 1: </label>
+                <input type="number" name="numero01" id="in1" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="in2">Número 2: </label>
+                <input type="number" name="numero02" id="in2" min="0" max="100" required>
+            </p>
+            <p>
+                <input type="button" value="Enviar" onclick="soma()">
+                <input type="reset" value="Limpar">
+            </p>
+            <p>
+                <label for="">Soma: </label>
+                <output name="somas" id="somas">0</output>
+            </p>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <p>
+                <label for="inasc">Ano de Nascimento: </label>
+                <input type="number" name="nasc" id="inasc" min="1900" max="2022" required>
+            </p>
+
+            <p>
+                <input type="button" value="Calcular" onclick="idade()">
+            </p>
+
+            <p id="resu">
+                Você tem
+            </p>
+        </fieldset>
+
+    </form>
+
+    <script>
+
+        function soma(){
+
+        let n1 = document.getElementById('in1')
+        let n2 = document.getElementById('in2')
+        let res = document.getElementById('somas')
+        let n01 = Number(n1.value)
+        let n02 = Number(n2.value)
+
+        let s = n01+n02
+
+        res.innerHTML = `${s}`
+    }
+
+        function idade(){
+            let idade = document.getElementById('inasc')
+            let idade_ = Number(idade.value)
+            let resu = document.getElementById('resu')
+            let year = new Date().getFullYear()
+            let idad = Number(year)-idade_
+            resu.innerHTML += `${idad} Anos`
+            
+        }
+    </script>
+</body>
+</html>

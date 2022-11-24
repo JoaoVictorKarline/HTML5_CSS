@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 007</title>
+</head>
+<body>
+    <form action="" method="get">
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="profis">
+                <datalist id="profis">
+                    <option>Professor</option>
+                    <option>Vendedor</option>
+                    <option>Desenvolvedor</option>
+                </datalist>
+            
+        </p>
+
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="PR" selected>Paraná</option>
+            </select>
+
+            <p>
+                <label for="imsg">Digite uma mensagem</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
