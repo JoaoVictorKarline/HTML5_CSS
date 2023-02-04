@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+        div{
+            height: 50px;
+            background-color: grey;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        
+        .first{
+            position: relative;
+            background-color: blueviolet;
+            left: 20px;
+        }
+
+        .relative{
+            background-color: blueviolet;
+        }
+
+        .absolute{
+            position: absolute;
+            height: 60px;
+            width: 70px;
+            background-color: yellow;
+            top: 20px;
+            left: 20px;
+        }
+
+        .fixed{
+            position: fixed;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>Static</div> <!--Por padrão é relativo-->
+    <div>Static</div>
+    <div class="relative first">Relativo</div>
+    <div>Static</div>
+    <p>Esse é um parágrafo</p>
+    <div>Static</div>
+    <div class="relative">Relativo</div>
+    <div class="absolute">Absolute</div>
+    <div class="fixed">Fixed</div>
+</body>
+</html>
