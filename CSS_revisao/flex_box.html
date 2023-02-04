@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            display: flex; /*Transforma em Row*/
+            justify-content: space-around; /*Alinhamento em relação ao eixo principal*/
+            align-items: center; /*Alinhamento em relação ao eixo secundário*/
+            flex-wrap: wrap; /*Quando os elementos atingem o limite da borda, os novos são adicionados em uma nova linha, evitando assim mudar a largura dos elementos*/
+            background-color: aqua;
+            border: 1px solid black;
+            max-width: 300px;
+            height: 300px;
+            padding: 15px;
+        }
+
+        .filho{
+            background-color: grey;
+            border: 1px solid blue;
+            height: 50px;
+            width: 50px;
+        }
+
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            text-align: justify;
+        }
+
+        .container2{
+            flex-direction: column; /*Coloca os elementos em coluna igual display block*/
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="filho">1</div>
+        <div class="filho">2</div>
+        <div class="filho">3</div>
+        <div class="filho">1</div>
+        <div class="filho">2</div>
+        <div class="filho">3</div>
+        <div class="filho">1</div>
+        <div class="filho">2</div>
+        <div class="filho">3</div>
+    </div>
+
+    <!--Ítens-->
+    <div class="container container2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        
+</body>
+</html>
