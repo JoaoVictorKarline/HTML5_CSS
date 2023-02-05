@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-grow</title>
+    <style>
+        .container{
+            display: flex; /*Transforma em Row*/
+            align-items: center; /*Alinhamento em relação ao eixo secundário*/
+            flex-wrap: wrap; /*Quando os elementos atingem o limite da borda, os novos são adicionados em uma nova linha, evitando assim mudar a largura dos elementos*/
+            background-color: aqua;
+            border: 1px solid black;
+            max-width: 300px;
+            height: 300px;
+            padding: 15px;
+        }
+
+        .container3{
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .box{
+            background-color: yellow;
+           
+        }
+
+        .tam1{
+            background-color: green; 
+            flex-grow: 1; /*Conforme maior ocupa um espaço maior na linha*/
+        }
+
+        .tam2{
+            background-color: blue;
+            flex-grow: 1;
+        }
+
+        .tam3{
+            flex-grow: 3;
+        }
+
+        .basea{
+            flex-basis: auto; /*Aumenta o ítem conforme o conteúdo*/
+        }
+
+        .base0{
+            flex-basis: 0; /*Não vai aumentar o ítem conforme o conteúdo*/
+        }
+
+        .base1{
+            flex-basis: 1;
+        }
+
+        .base2{
+            flex-basis: 2;
+        }
+
+        .order{
+            /*Vai alterar a ordem dos ítens*/
+            order: 0;
+        }
+
+        .order1{
+            order: 1;
+        }
+
+        .order2{
+            order: 2;
+        }
+
+        .reduzir{
+            /*Capacidade do meu elemento reduzir, por padrão é 1 que reduz para caber no container*/
+            flex-shrink: 1;
+        }
+
+        .reduzir0{
+            flex-shrink: 0; /*Perde a capacidade de reduzir*/
+        }
+
+        .inicio{
+            align-self: flex-start; /*Alinha um ítem específico*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container container3">
+        <div class="box tam1 base0 order2">1 Lorem ipsum doloitaque ex nulla id.</div>
+        <div class="box tam1 base0 order1">2 Lorem ipsum dolor sit amet consectetur adi</div>
+        <div class="box tam1 base0 order inicio">3</div>
+    </div>
+</body>
+</html>
