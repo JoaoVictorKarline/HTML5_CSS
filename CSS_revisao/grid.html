@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: #333;
+            border: 1px solid red;
+            padding: 15px;
+            grid-template-columns: auto auto auto ; /*Pimeira Coluna, Segunda coluna, Terceira Coluna*/ /*Eu defino quantas colunas vai ter*/
+            height: 50vh;
+            grid-template-rows: 50px 90px; /*Como as linhas serão dispostas (50px para a primeira e 90 para a segunda)*/
+            gap: 20px; /*Da um espaçamento entre as linhas e colunas*/
+
+        }
+
+        .container div{
+            background-color: #ccc;
+            padding: 20px;
+            border: 1px solid blue;
+        }
+
+        .container2{
+            display: grid;
+            background-color: #333;
+            border: 1px solid red;
+            padding: 15px;
+            gap: 5px;
+            grid-template-areas: 
+                'header header header'
+                'sidebar content content'
+                'footer footer footer'
+            ;
+        }
+
+        #header{
+            grid-area: header;
+        }
+
+        #sidebar{
+            grid-area: sidebar;
+        }
+
+        #content{
+            grid-area: content;
+            height: 50vh;
+        }
+
+        #footer{
+            grid-area: footer;
+        }
+
+        
+        .container2 div{
+            background-color: #ccc;
+            padding: 20px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div> -->
+    <div class="container2">
+        <div id="header">
+            <p>Cabeçalho</p>
+        </div>
+        <div id="sidebar">
+            <p>Sidebar</p>
+        </div>
+        <div id="content">
+            <p>Conteúdo</p>
+        </div>
+        <div id="footer">
+            <p>Rodapé</p>
+        </div>
+    </div>
+</body>
+</html>

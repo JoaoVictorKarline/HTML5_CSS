@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0.616);
+        }
+
+        .container{
+            background-color: rgba(0, 0, 0, 0.685);
+            display: grid;
+            grid-template-columns: auto 200px auto auto;
+            grid-template-rows: 50px 200px;
+            gap: 20px ;
+            width: 80%;
+            height: 100vh;
+            padding: 10px;
+        }
+
+        .item{
+            background-color: rgba(0, 0, 255, 0.719);
+            text-align: center;
+        }
+
+        .item_column_start{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .item_row_start{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            
+        }
+
+        .item_area{
+            grid-area: 4 / 2 / 8 / 4 ; /*Junção do Grid Column com Row*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item_column_start">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item item_row_start">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item item_area">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+</body>
+</html>

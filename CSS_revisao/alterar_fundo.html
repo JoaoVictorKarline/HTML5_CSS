@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Fundo</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0.534);
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 300px;
+            width: 300px;
+        }
+
+        .alternar{
+            position: relative;
+            cursor: pointer;
+            height: 50px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: grey;
+        }
+
+        .right{
+            display: inline-block;
+            position: absolute;
+            height: 80%;
+            width: 25%;
+            top: 5px;
+            left: 7px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+
+        .left{
+            display: inline-block;
+            position: absolute;
+            height: 80%;
+            width: 25%;
+            top: 5px;
+            left: 105px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+
+        .invisible{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="alternar">
+            <div class="right"></div>
+        </div>
+    </div>
+    <script>
+        let container = document.querySelector('.container')
+        let alternar = document.querySelector('.alternar')
+
+        alternar.addEventListener("click",()=>{
+            let div_right = document.querySelector('.right')
+
+            div_right.classList.toggle('left')
+
+            if(div_right.classList.contains('left')){
+                container.style.backgroundColor = 'white'
+            } else {
+                container.style.backgroundColor = 'black'
+            }
+        })
+    </script>
+</body>
+</html>
